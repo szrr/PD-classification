@@ -49,7 +49,7 @@ Python  3.8   pytorch  1.7.0   torchvision  0.8.1
 
 numpy  1.19.2   librosa  0.8.1   prettytable  2.1.0
 
+### Update
 
-
-
+2021/10/19
 
