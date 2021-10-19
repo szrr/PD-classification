@@ -1,5 +1,5 @@
 from pddiagnose.diagnose_mel_spec_initial import *
-from model.twoview_model import *
+from model.dualview_model import *
 import torch
 from torch.nn import CrossEntropyLoss
 import torch.optim as optim
@@ -73,8 +73,8 @@ if __name__ == '__main__':
     train_dataset = MyDataset(wave_x_train, spec_x_train, y_train)
     train_loader = DataLoader(train_dataset, batch_size=batch_size, shuffle=True)
 
-    model = twoview_model().to(device)
-    #model = twoview_aggregation_model().to(device)
+    model = dualview_model().to(device)
+    #model = dualview_aggregation_model().to(device)
 
     adam = optim.Adam(model.parameters(), lr=0.001)
     cost = CrossEntropyLoss()
