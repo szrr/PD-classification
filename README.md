@@ -1,4 +1,4 @@
-# PD Classification、
+# PD Classification
 In this project,  we use a two-view model with feature aggregation to classify PD patients using speech data. 
 
 Two experiments are conducted here. In ***pddiagnose***, we try to classify PD patients with healthy people, and in ***pdseverity***, we try to classify disease severity of PD patients.
@@ -9,16 +9,16 @@ Two experiments are conducted here. In ***pddiagnose***, we try to classify PD p
 
 - white space and voice of the staff are cropped in our ***KCL dataset optimized***
 
-#### Model
+### Model
 
 In ***model***, *one-dim/two-dim/dual-view* CNN models with feature aggregation are used in our project to classify PD patients. 
 
-#### Low-level data initial
+### Low-level data initial
 
 - `diagnose_waveform_initial.py` and `diagnose_mel_spec_initial.py` in ***pddiagnose*** are used to initial waveform segments and Mel-spectrograms of PD patients(PD) and healthy controllers(HC). 
 - `severity_waveform_initial.py` and `severity_melspectrogram_initial.py` in ***pdseverity*** are used to initial waveform segments and Mel-spectrograms of PD patients(PD) only.
 
-#### Run our model
+### Run our model
 
 For example, in ***pddiagnose*** : 
 
@@ -43,7 +43,7 @@ For example, in ***pddiagnose*** :
   #model = aggregation_onedcnn().to(device)
   ```
 
-#### Environment
+### Environment
 
 Python  3.8   pytorch  1.7.0   torchvision  0.8.1   
 
